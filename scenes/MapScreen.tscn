@@ -23,6 +23,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 texture = ExtResource("2")
 expand_mode = 1
 stretch_mode = 6
@@ -33,6 +34,7 @@ offset_left = 760.0
 offset_top = 250.0
 offset_right = 900.0
 offset_bottom = 390.0
+mouse_filter = 2
 texture = ExtResource("8")
 expand_mode = 1
 stretch_mode = 5
@@ -42,6 +44,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 
 [node name="Avatar" type="TextureRect" parent="HUD"]
 layout_mode = 0
@@ -49,22 +52,24 @@ offset_left = 40.0
 offset_top = 40.0
 offset_right = 180.0
 offset_bottom = 180.0
+mouse_filter = 2
 texture = ExtResource("9")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="PainelRecursos" type="Panel" parent="HUD"]
+[node name="PainelRecursos" type="Control" parent="HUD"]
 layout_mode = 0
 offset_left = 35.0
 offset_top = 220.0
 offset_right = 455.0
 offset_bottom = 840.0
+mouse_filter = 2
 
 [node name="PainelArte" type="TextureRect" parent="HUD/PainelRecursos"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+layout_mode = 0
+offset_right = 420.0
+offset_bottom = 620.0
+mouse_filter = 2
 texture = ExtResource("3")
 expand_mode = 1
 stretch_mode = 5
@@ -75,10 +80,12 @@ offset_left = 45.0
 offset_top = 60.0
 offset_right = 375.0
 offset_bottom = 150.0
+mouse_filter = 2
 
 [node name="IconeAgua" type="TextureRect" parent="HUD/PainelRecursos/AguaLinha"]
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("4")
 expand_mode = 1
 stretch_mode = 5
@@ -93,10 +100,12 @@ offset_left = 45.0
 offset_top = 190.0
 offset_right = 375.0
 offset_bottom = 280.0
+mouse_filter = 2
 
 [node name="IconeComida" type="TextureRect" parent="HUD/PainelRecursos/ComidaLinha"]
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("5")
 expand_mode = 1
 stretch_mode = 5
@@ -111,10 +120,12 @@ offset_left = 45.0
 offset_top = 320.0
 offset_right = 375.0
 offset_bottom = 410.0
+mouse_filter = 2
 
 [node name="IconeEnergia" type="TextureRect" parent="HUD/PainelRecursos/EnergiaLinha"]
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("6")
 expand_mode = 1
 stretch_mode = 5
@@ -129,10 +140,12 @@ offset_left = 45.0
 offset_top = 450.0
 offset_right = 375.0
 offset_bottom = 540.0
+mouse_filter = 2
 
 [node name="IconeTempo" type="TextureRect" parent="HUD/PainelRecursos/TempoLinha"]
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("7")
 expand_mode = 1
 stretch_mode = 5
@@ -141,6 +154,17 @@ stretch_mode = 5
 layout_mode = 2
 text = "72h"
 
+[node name="BotaoFundo" type="TextureRect" parent="HUD"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 1660.0
+offset_right = 890.0
+offset_bottom = 1840.0
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="BotaoPlanejarRota" type="Button" parent="HUD"]
 layout_mode = 0
 offset_left = 190.0
@@ -148,16 +172,7 @@ offset_top = 1660.0
 offset_right = 890.0
 offset_bottom = 1840.0
 text = "PLANEJAR ROTA"
-
-[node name="BotaoArte" type="TextureRect" parent="HUD/BotaoPlanejarRota"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-mouse_filter = 2
-texture = ExtResource("10")
-expand_mode = 1
-stretch_mode = 5
+flat = true
 
 [node name="StatusLabel" type="Label" parent="HUD"]
 layout_mode = 0
