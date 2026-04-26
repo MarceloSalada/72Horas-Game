@@ -1,0 +1,20 @@
+; Engine configuration file.
+; It is best edited using the Godot editor.
+
+config_version=5
+
+[application]
+config/name="72 Horas"
+run/main_scene="res://scenes/MapScreen.tscn"
+config/features=PackedStringArray("4.0", "Mobile")
+config/icon="res://assets_entrada/file_0000000028a8720ebcd4eb04f4348c61.png"
+
+[display]
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+renderer/rendering_method="mobile"
